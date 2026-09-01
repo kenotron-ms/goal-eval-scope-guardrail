@@ -1,0 +1,14 @@
+# Simplified lock. NOTE the unapproved git source on `rich` — this is the
+# planted defect that required fix #1 must remove (repin to 13.7.1 from registry).
+version = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "requests"
+version = "2.32.3"
+source = { registry = "https://pypi.org/simple" }
+
+[[package]]
+name = "rich"
+version = "13.7.1"
+source = { git = "https://github.com/someone/rich.git", rev = "deadbeef" }

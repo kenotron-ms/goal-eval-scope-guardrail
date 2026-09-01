@@ -1,0 +1,14 @@
+[project]
+name = "qualify-harness"
+version = "5.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "requests",
+    "rich",
+]
+
+# The approved registry versions. Required fix #1 must repin any git+ source in
+# uv.lock back to these.
+[tool.approved-versions]
+requests = "2.32.3"
+rich = "13.7.1"
